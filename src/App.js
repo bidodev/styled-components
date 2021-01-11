@@ -1,28 +1,25 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const Container = styled.div`
-  border: 1px solid red;
+import Button from './components/Button'
+
+const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80vh;
-
-`
-
-const Title = styled.h1`
-color: red;
-font-size: 1rem;
-
-`
-
+  background-color: #606060;
+`;
 
 function App() {
   return (
-    <Container>
-    <Title>
-      Hello Darkness
-    </Title>
-    </Container>
+    <Section>
+      <Button primary>
+        First Button
+      </Button>
+      <Button>
+        Second Button
+      </Button>
+    </Section>
   );
 }
 
